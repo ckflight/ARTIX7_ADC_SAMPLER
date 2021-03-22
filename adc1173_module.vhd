@@ -36,7 +36,6 @@ begin
     
     ADC_CLK <= ADC_CLK_IN;    
 
-    -- s_adc_clock is 2 x adc_sampling for 2 states.
     ADC_SAMPLE_PROCESS : process(SYSCLK, RESET)
     type fsm_states is (sample_state, wait_state1, wait_state2);
     variable current_state : fsm_states := sample_state;

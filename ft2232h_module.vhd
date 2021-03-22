@@ -9,15 +9,12 @@ use IEEE.NUMERIC_STD.all;
 -- Datasheet section 4.5, page 43
 
 -- I am using Channel A
--- ADBUS0-7     <---> Spartan Edge Board D4 to D11 (fastest pins around 25 MHz)
--- ACBUS0       <---> Spartan Edge Board IO0
--- ACBUS1       <---> Spartan Edge Board IO1
--- ACBUS2       <---> Spartan Edge Board IO2
--- ACBUS3       <---> Spartan Edge Board IO6
+-- ADBUS0-7
+-- ACBUS0
+-- ACBUS1
+-- ACBUS2
+-- ACBUS3
 -- ACBUS4(SIWU) <---> GND if this is not ground then transfer is so slow.
-
--- Spartan pinout is not good rooted, even 20MHz clock is not working properly.
--- Nexys4 handles 40MHz speed with its gpios
 
 
 entity ft2232h_module is

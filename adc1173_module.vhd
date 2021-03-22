@@ -39,7 +39,7 @@ begin
     ADC_SAMPLE_PROCESS : process(SYSCLK, RESET)
     type fsm_states is (sample_state, wait_state1, wait_state2);
     variable current_state : fsm_states := sample_state;
-    constant number_of_samples : integer := 2048;
+    constant number_of_samples : integer := 8192;
     variable sample_counter : integer range 0 to number_of_samples := 0;
     variable data_counter : integer range 0 to 255 := 0;
     variable wait_counter : integer range 0 to 100 := 0;

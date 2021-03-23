@@ -132,7 +132,7 @@ begin
                     when st2 =>                    
                         s_tx_done <= '0';
                         data_counter := data_counter + 1;
-                        if data_counter = 1024 then
+                        if data_counter = 8192 then
                             state := st4;
                         else
                             state := idle_st;    

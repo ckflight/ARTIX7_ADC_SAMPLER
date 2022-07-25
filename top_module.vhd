@@ -74,7 +74,7 @@ architecture Behavioral of top_module is
     );
     END COMPONENT;
     
-    COMPONENT adc1173_module
+    COMPONENT max1426_module
     PORT(  
         SYSCLK      : in STD_LOGIC;
         ADC_CLK_IN  : in STD_LOGIC;
@@ -154,7 +154,7 @@ begin
         FIFO_EMPTY    => s_fifo_empty    
     );
     
-    INST_MODULE3 : adc1173_module
+    INST_MODULE3 : max1426_module
     PORT MAP(
         SYSCLK           => s_sysclk,
         ADC_CLK_IN       => s_adc_clk,

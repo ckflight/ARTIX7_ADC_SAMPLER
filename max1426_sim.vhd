@@ -6,7 +6,7 @@ end adc1173_sim;
 
 architecture Behavioral of adc1173_sim is
 
-    COMPONENT adc1173_module
+    COMPONENT max1426_module
     PORT(
         SYSCLK          : in STD_LOGIC;
         ADC_CLK_IN      : in STD_LOGIC;
@@ -40,7 +40,7 @@ architecture Behavioral of adc1173_sim is
 
 begin
 
-    UUT : adc1173_module
+    UUT : max1426_module
     PORT MAP(
         SYSCLK => sysclk,
         ADC_CLK_IN => adc_clk_in,

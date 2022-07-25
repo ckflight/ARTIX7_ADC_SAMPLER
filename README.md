@@ -1,9 +1,20 @@
-# ARTIX7_ADC_SAMPLER
+# XILINX Artix 7 High Speed ADC Sampler
 
-Artix 7 vhdl design for adc data sampler up to 10 MSPS speed to be used with the Radar i designed https://github.com/ckflight/FMCW_RADAR.
+## Project Info:
+
+ * This hardware design samples the data of parallel interface 10 MSPS ADC. 
+ 
+ * The sampled data is stored in the FIFO module implemented. The FIFO module is capable of responding to read and write operations in one clock cycle simultaneously.
+ 
+ * FT2232H USB 2.0 interface is implemented in FT2232H Asynchronous FT245 FIFO mode.
+ 
+ * The ADC samples are buffered to HOST PC over FT2232H USB interface.
+
+ * I designed this board to use it with my FMCW Radar design for higher speed ADC sampling. The benefit of higher sampling frequency is, it lowers the ADC noise floor.
+ The noise floor for the Radar's receiver chain is around -120 dBm.
 
 
-Higher sampling rates are benefitial for lower adc noise floor which can be seen from the equation SNR =  SNR(adc) + 10log(framp * fsampling)
+SNR =  SNR(adc) + 10log(framp * fsampling)
 
 To test adc data counter is used.
 

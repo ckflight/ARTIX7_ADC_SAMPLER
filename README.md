@@ -16,6 +16,8 @@
  
  * ADC Noise Floor Calculation:
  
+   Check: https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/1197.html
+ 
  $$ Signal Power = {10 * \log _{10} {Vrms^2 \over RIN}} + 30dB $$
  
  $$ Vrms = 0.707 * Vpeak $$
